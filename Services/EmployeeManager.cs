@@ -16,15 +16,15 @@ namespace crud_test_solid2.Services
         public EmployeeManager(IEmployeeManager repo) {
             _repo = repo;
         }
+        public void AddEmployee(Employee e) {
+            _repo.Save(e);
+        }
 
 
         public Employee getEmployeeByID(int id) {
             return _repo.GetById(id);
         }
 
-        public void AddEmployee(Employee e) {
-            _repo.Save(e);
-        }
 
         public List<Employee> GetAllEmployees()
         {

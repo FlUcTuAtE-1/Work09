@@ -40,5 +40,10 @@ namespace crud_test_solid2
             frmList.MdiParent = this;
             frmList.Show();
         }
+
+        private void fileMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
